@@ -1,0 +1,8 @@
+ul li {
+    display: inline-block;
+    border: 10px solid #e97a3d;
+    width: 150px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
