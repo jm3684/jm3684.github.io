@@ -1,8 +1,28 @@
-ul li {
-    display: inline-block;
+ul li{
+    background-color: #ece8e1;
     border: 10px solid #e97a3d;
     width: 150px;
     padding: 15px;
     margin-top: 5px;
     margin-left: 15px;
+    
 }
+
+nav>ul>li {
+    display: inline-block;
+    position: relative;
+
+}
+
+nav>ul>li:hover>ul {
+    display:block
+}
+
+nav>ul>li>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display:none;
+    list-style-type: none;
+}
+
