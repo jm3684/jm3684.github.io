@@ -1,11 +1,38 @@
-ul li{
+nav {
+    font-family:'Trebuchet MS';
+    font: size 14px;
+}
+
+nav a:link{
+    background-color: #ece8e1;
+}
+
+nav a:hover, nav a:focus{
+    background-color: #c7f558;
+    display: block;
+}
+
+nav a:active{
+    background-color: #352b43;
+}
+
+nav>ul>li{
     background-color: #ece8e1;
     border: 10px solid #e97a3d;
     width: 150px;
     padding: 15px;
     margin-top: 5px;
     margin-left: 15px;
-    
+    text-align: center;
+}
+
+nav>ul>li>ul>li{
+    background-color: #ece8e1;
+    border: 5px solid #e97a3d;
+    width: 150px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
 }
 
 nav>ul>li {
@@ -15,7 +42,7 @@ nav>ul>li {
 }
 
 nav>ul>li:hover>ul {
-    display:block
+    display:block;
 }
 
 nav>ul>li>ul {

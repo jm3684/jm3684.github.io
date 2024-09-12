@@ -1,1 +1,23 @@
-h1 {color: #e97a3d;}
+
+
+h1 {
+    color: #e97a3d;
+
+}
+
+body{
+    font-family: 'Trebuchet MS';
+    background-color: #ece8e1;
+
+}
+
+span{
+    font-family:'Lucida Sans';
+    color:#e97a3d;
+}
+
+main>ul>li{
+    padding-bottom: 10px;
+    padding-left: 36px;
+    text-indent: -35px;
+}
