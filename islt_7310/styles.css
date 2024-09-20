@@ -7,14 +7,6 @@ h1 {
 
 }
 
-h2{
-    color:#e97a3d;
-}
-
-.h_index{
-    text-align: center;
-}
-
 body{
     background-color:#ece8e1;
 }
@@ -28,7 +20,7 @@ main{
 
 span{
     font-family:'Lucida Sans';
-    color:#352b43;
+    color:#e97a3d;
 }
 
 main>ul>li{
@@ -62,25 +54,8 @@ footer{
 
 .resume{
    flex: 1;
-   padding-left:30px;
 }
 
 .quote{ 
     flex-direction:column;
-}
-
-
-@media(max-width:800px){
-    .container{
-        display:flex;
-        flex-direction:column;
-    }
-    .bio{
-        flex: 1;
-        width:auto;
-    }
-    .resume{
-        flex:1;
-        align-self:center;
-    }
 }
