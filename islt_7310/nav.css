@@ -1,15 +1,16 @@
-nav ul{
+/* General Navigation Styles */
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     text-align: center;
     font-family: 'Trebuchet MS';
     font-size: 18px;
     color: #352b43;
-    display:block;
+    display: block;
     padding: 10px;
     border: 10px solid #e97a3d;
     border-radius: 50px;
@@ -17,189 +18,83 @@ nav a{
 }
 
 nav ul li ul {
-    display:none;
+    display: none; /* Hide submenus by default */
     list-style-type: none;
+    padding: 0;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: #352b43;
     color: #e97a3d;
 }
 
-
-nav a:active{
+nav a:active {
     background-color: #c7f558;
 }
 
-nav ul{
-    display:flex;
+nav ul {
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-nav li{
+nav li {
     flex: 1 1 0;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     position: relative;
     display: block;
 }
 
-
-nav ul li:hover ul{
+nav ul li:hover ul {
     display: block;
     position: absolute;
     background: #ece8e1;
     width: 100%;
-    padding:5px;
+    padding: 5px;
 }
 
-/*nav input{
-    appearance:none;
-    
-} */
+/* Mobile-Specific Styles */
+@media (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
 
-@media(max-width: 800px){
-  nav{
-    display: flex;
-    flex-direction: column;
-  }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
 
-  nav ul{
-    display: flex;
-    flex-direction: column;
-  }
-
-  nav ul li{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  nav ul li ul:hover{
-    display:flex;
-    flex-direction: column;
-    width:100%;
-  }
-
-
-  
-}
-	
-  
-  
-  
-  
-  
-  /*body{
-		padding:0;
-	}
-	nav{
-		height: auto;
-		position: static;
-		ul{
-			margin-top: 0;
-			padding: 10px;
-			display: none;
-			li{
+    nav ul li {
         display: block;
-        text-align: left;
-        text-indent: 10px;
         width: 100%;
-        margin-left: 0;
-        font-size: 1.2em;
-        background-color: transparent;
-  >ul{
-    position: static;
-    padding-left: 30px;
-    padding-top: 0;
-  >li{
-    text-indent: 10px;
-    font-size: 1em;
-    &:hover, &.active{
-      background-color: darken($menu_Color, 10%);
     }
-    &:last-child{
-      margin-bottom: 8px;
+
+    nav ul li ul {
+        display: none; /* Ensure the dropdown is hidden initially */
+        position: relative;
     }
-    a{
-      padding-left: 0;
-    } 
-  }
-}
-}
-}
-}
-nav a#drop{
-display: block;
-}
 
-/*@media(max-width:800px){
-    #overlay-button {
-        position: absolute;
-        cursor: pointer;
-        span {
-            background-color: #352b43;
-            color:#c7f558;
-            padding: 25px;
-            display: flex;
-            &:after {
-                background-color: #352b43;
-                position: absolute;
-                transition: all  ease-in-out;
-            }
-          }
-          &:hover span, &:hover span:before, &:hover span:after {
-            background: purple;
-          }
-      }
-      
-      input[type=checkbox] {
-        display: none;
-        
-        &:checked ~ #overlay {
-          visibility: visible;
-
-        }
-        
-        &:checked ~ #overlay-button {
-          &:hover span, span{
-            padding:15px;
-            background-color:purple;
-          }
-      
-        }
-      }
-      
-      #overlay {
-        height: 100%;
+    nav ul li:focus-within ul,
+    nav ul li:hover ul {
+        display: flex; /* Show the dropdown when parent is focused or hovered */
+        flex-direction: column;
+        position: relative;
+        background: #ece8e1;
+        padding: 0;
         width: 100%;
-        background: #352b43;
-        z-index: 2;
-        visibility: hidden;
-        position: fixed;
-        &.active {
-          visibility: visible;
-        } ul {
-            display: flex;
-            justify-content: baseline;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-            height: auto;
-            list-style-type: none;
-            li {
-              a {
-                color: white;
-                text-decoration: none;
-                font-size: 1.5em;
-                &:hover {
-                  background-color:#e97a3d
-                }
-              }
-            }
-          }
-        }
+    }
+
+    nav ul li a {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav ul li ul li a {
+        padding-left: 15px; /* Slightly indent submenu items */
+    }
 }
