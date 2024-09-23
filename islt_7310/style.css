@@ -1,6 +1,12 @@
 
 /*Everything!!!*/
+@font-face{
+    font-family: Playwrite;
+    src: url("Playwrite.ttf")
+}
+
 h1 {
+    font-family: Playwrite;
     display: flex;
     color: #352b43;
     justify-content: center;
@@ -82,5 +88,24 @@ footer{
     .resume{
         flex:1;
         align-self:center;
+    }
+}
+
+
+/*Print Query*/
+@media print{
+    *{
+        background: transparent !important;
+        color: black !important;
+        box-shadow:none !important;
+        text-shadow: none !important;
+        border: none !important;
+}
+    nav{
+        display: none !important;
+    }
+
+    @page{
+        margin: 1in;
     }
 }
