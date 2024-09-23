@@ -33,11 +33,11 @@ main{
 
 
 span{
-    font-family:'Lucida Sans';
+    font-family:'Trebuchet MS';
     color:#352b43;
 }
 
-main>ul>li{
+.hang li{
     padding-bottom: 10px;
     padding-left: 36px;
     text-indent: -35px;
@@ -46,6 +46,10 @@ main>ul>li{
 
 footer{
     padding-top:50px;
+}
+
+.welcome{
+    line-height:1.5;
 }
 
 /*footer background image*/
@@ -68,7 +72,7 @@ footer img:hover{
 }
 
 
-/*flexgrids*/
+/*About Me flexgrids*/
 
 .container{
     display:flex;
@@ -83,6 +87,7 @@ footer img:hover{
     border: 10px solid #e97a3d;
     width: 40%;
     padding: 20px;
+    line-height:1.5;
 }
 
 .resume{
@@ -92,7 +97,73 @@ footer img:hover{
 
 .quote{ 
     flex-direction:column;
+    margin-bottom:20px;
 }
+
+/*Let's Learn flexgrids*/
+
+.history{
+    display:flex;
+    align-items:baseline;
+    justify-content:center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.golden{
+    border: 10px solid #e97a3d;
+    width: 40%;
+    padding: 20px;
+
+}
+
+.history img{
+    max-width:100%;
+    max-height:100%;
+    border:#352b43 solid 3px;
+}
+
+
+.silver{
+    border: 10px solid #e97a3d;
+    width: 40%;
+    padding: 20px;
+
+}.bronze{
+    border: 10px solid #e97a3d;
+    width: 40%;
+    padding: 20px;
+
+}.modern{
+    border: 10px solid #e97a3d;
+    width: 40%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*References and Resources*/
+
+.ref{
+    border: 10px solid #e97a3d;
+    padding: 20px;
+    margin: 20px;
+    line-height: 2;
+}
+
+.photo{
+    border: 10px solid #e97a3d;
+    padding: 20px;
+    margin: 20px;
+    line-height: 2;
+}
+
+.resources{
+    border: 10px solid #e97a3d;
+    padding: 20px;
+    margin: 20px;
+    line-height: 2;
+}
+
 
 
 @media(max-width:800px){
@@ -107,6 +178,26 @@ footer img:hover{
     .resume{
         flex:1;
         align-self:center;
+    }
+    .history{
+        display:flex;
+        flex-direction: column;
+    }
+    .golden{
+        width:auto;
+    }
+    .silver{
+        width:auto;
+    }
+    .bronze{
+        width:auto;
+    }
+    .modern{
+        width:auto;
+    }
+    .history img{
+        object-fit:cover;
+        width:100%;
     }
 }
 
