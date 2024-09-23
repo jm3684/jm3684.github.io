@@ -48,6 +48,16 @@ footer{
     padding-top:50px;
 }
 
+/*footer background image*/
+
+footer{
+    background-image:url(dark.jpg);
+    background-repeat: no-repeat;
+    color:white;
+    padding-left: 30px;
+    padding-bottom:20px;
+}
+
 
 /*flexgrids*/
 
