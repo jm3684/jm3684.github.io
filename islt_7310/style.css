@@ -53,9 +53,18 @@ footer{
 footer{
     background-image:url(dark.jpg);
     background-repeat: no-repeat;
-    color:white;
+    color:#ece8e1;
     padding-left: 30px;
     padding-bottom:20px;
+}
+
+/*Icon Transform*/
+footer img{
+    transition: transform 1s;
+}
+
+footer img:hover{
+    transform: scale(1.5);
 }
 
 
