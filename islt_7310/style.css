@@ -212,12 +212,15 @@ footer img:hover{
     }
     .intro{
         margin: 0px;
+        width: 100%;
     }
     .obj{
         margin:0px;
-    }
-    video{
         width:100%;
+    }
+    .video{
+        flex: 1;
+        width:400px;
     }
     .ref{
         word-wrap: break-word;
