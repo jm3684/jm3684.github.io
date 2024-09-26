@@ -92,7 +92,7 @@ footer img:hover{
 
 .resume{
    flex: 1;
-   padding-left:30px;
+   padding:20px;
 }
 
 .quote{ 
@@ -188,6 +188,7 @@ footer img:hover{
     .resume{
         flex:1;
         align-self:center;
+        margin:30px;
     }
     .history{
         display:flex;
@@ -209,6 +210,23 @@ footer img:hover{
         object-fit:cover;
         width:100%;
     }
+    .intro{
+        margin: 0px;
+    }
+    .obj{
+        margin:0px;
+    }
+    video{
+        width:100%;
+    }
+    .ref{
+        word-wrap: break-word;
+    }
+    .resources{
+        word-wrap: break-word;
+    }
+    .photo{
+        word-wrap: break-word;    }
 }
 
 
