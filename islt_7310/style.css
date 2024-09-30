@@ -119,7 +119,8 @@ tr:nth-child(odd) {
 
 .resume{
    flex: 1;
-   padding:20px;
+   padding-bottom:20px;
+   padding-left:20px;
 }
 
 .quote{ 
@@ -209,6 +210,38 @@ tr:nth-child(odd) {
     padding: 20px;
 }
 
+/*Contact Page*/
+
+form{
+    padding:20px;
+    border: 10px solid #eb4a78;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left:100px;
+    margin-right: 100px;
+    color:#431e7b;
+    justify-content: center;
+    align-items: center;;
+}
+
+form div{
+    padding:10px;
+}
+
+form input{
+    width: 400px;
+}
+
+form textarea{
+    width: 400px;
+}
+
+button{
+    color:#431e7b;
+}
+
+
 
 
 @media(max-width:800px){
@@ -271,6 +304,20 @@ tr:nth-child(odd) {
     }
     .photo{
         word-wrap: break-word;    }
+
+    form{
+        flex:1;
+        padding:20px;
+        border: 10px solid #eb4a78;
+        flex-direction: column;
+        display: flex;
+        width:auto;
+        margin-left: auto;
+        margin-right:auto;
+        color:#431e7b;
+        justify-content: center;
+        align-items: center;;
+    }
 }
 
 
