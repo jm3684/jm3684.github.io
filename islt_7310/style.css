@@ -91,7 +91,13 @@ footer img:hover{
     padding: 5px;
 }
 
+tr:nth-child(even) {
+    background-color: #e9acbd;
+}
 
+tr:nth-child(odd) {
+    background-color: #cebde6;
+}
 
 /*About Me flexgrids*/
 
