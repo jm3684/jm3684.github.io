@@ -14,7 +14,7 @@ h1 {
 }
 
 h2{
-    color:#e97a3d;
+    color:#431e7b;
 }
 
 .h_index{
@@ -28,13 +28,13 @@ body{
 main{
     font-family: 'Trebuchet MS';
     background-color: #ece8e1;
-    color: #352b43
+    color: #352b43;
 }
 
 
 span{
     font-family:'Trebuchet MS';
-    color:#352b43;
+    color:#431e7b;
 }
 
 .hang li{
@@ -71,6 +71,27 @@ footer img:hover{
     transform: scale(1.5);
 }
 
+/*Home Page table*/
+.table{
+    text-align:center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.table th{
+    background-color: #431e7b;
+    color:#ece8e1;
+    border: 1px solid #352b43;
+    padding: 5px;
+}
+
+.table td{
+    border: 1px solid #eb4a78;
+    padding: 5px;
+}
+
+
 
 /*About Me flexgrids*/
 
@@ -84,7 +105,7 @@ footer img:hover{
 }
 
 .bio{
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     width: 40%;
     padding: 20px;
     line-height:1.5;
@@ -111,7 +132,7 @@ footer img:hover{
 }
 
 .golden{
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     width: 40%;
     padding: 20px;
 
@@ -125,17 +146,17 @@ footer img:hover{
 
 
 .silver{
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     width: 40%;
     padding: 20px;
 
 }.bronze{
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     width: 40%;
     padding: 20px;
 
 }.modern{
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     width: 40%;
     padding: 20px;
     margin-bottom: 20px;
@@ -144,21 +165,21 @@ footer img:hover{
 /*References and Resources*/
 
 .ref{
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     padding: 20px;
     margin: 20px;
     line-height: 2;
 }
 
 .photo{
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     padding: 20px;
     margin: 20px;
     line-height: 2;
 }
 
 .resources{
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     padding: 20px;
     margin: 20px;
     line-height: 2;

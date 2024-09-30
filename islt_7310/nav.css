@@ -12,7 +12,7 @@ nav a {
     color: #352b43;
     display: block;
     padding: 10px;
-    border: 10px solid #e97a3d;
+    border: 10px solid #eb4a78;
     border-radius: 50px;
     margin: 5px;
 }
@@ -25,11 +25,11 @@ nav ul li ul {
 
 nav a:hover {
     background-color: #352b43;
-    color: #e97a3d;
+    color: #eb4a78;
 }
 
 nav a:active {
-    background-color: #c7f558;
+    background-color: #431e7b;
 }
 
 nav ul {
